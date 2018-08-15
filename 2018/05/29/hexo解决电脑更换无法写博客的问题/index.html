@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>hexo解决电脑更换无法写博客的问题 | Magicianly</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="hexo部署blog到github确实很方便，下载相关插件，然后一条命令就搞定了。不明白？参考这篇hexo配置，神马？不知道怎么配置nodejs环境？那就参考这里。">
+<meta name="keywords" content="hexo,git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo解决电脑更换无法写博客的问题">
+<meta property="og:url" content="http://yoursite.com/2018/05/29/hexo解决电脑更换无法写博客的问题/index.html">
+<meta property="og:site_name" content="Magicianly">
+<meta property="og:description" content="hexo部署blog到github确实很方便，下载相关插件，然后一条命令就搞定了。不明白？参考这篇hexo配置，神马？不知道怎么配置nodejs环境？那就参考这里。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527769690886&di=29a6a4f1a965778ed8760ede19954cdf&imgtype=jpg&src=http%3A%2F%2Fimg1.imgtn.bdimg.com%2Fit%2Fu%3D1570662146%2C719786847%26fm%3D214%26gp%3D0.jpg">
+<meta property="og:updated_time" content="2018-05-31T09:42:17.469Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo解决电脑更换无法写博客的问题">
+<meta name="twitter:description" content="hexo部署blog到github确实很方便，下载相关插件，然后一条命令就搞定了。不明白？参考这篇hexo配置，神马？不知道怎么配置nodejs环境？那就参考这里。">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527769690886&di=29a6a4f1a965778ed8760ede19954cdf&imgtype=jpg&src=http%3A%2F%2Fimg1.imgtn.bdimg.com%2Fit%2Fu%3D1570662146%2C719786847%26fm%3D214%26gp%3D0.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="Magicianly" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="https://i.imgur.com/sJIaT5C.jpg">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+
+  <script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+  
+      <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<script>AV.initialize("OwMXlylMoU9wWk7rapIN5ghI-gzGzoHsz", "icxRJWTVsjH8y7aIqrp0iCIV");</script>
+<script src="/js/Counter.js"></script>
+  
+</head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://www.qqzhi.com/uploadpic/2014-09-16/213245445.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Magician</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">欢迎来到我的小屋</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/HEXO-小知识总结/" style="font-size: 20px;">HEXO 小知识总结</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/程序人生/" style="font-size: 10px;">程序人生</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://magicianly.github.io/">magicianly</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://violet-maple.github.io">波哥</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://blog.csdn.net/weixin_41782332">个人博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://zhouforrest.github.io/">超哥</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://jamey92.github.io/">jamey</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://karen2066.github.io/">Karen2066</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Magician</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://www.qqzhi.com/uploadpic/2014-09-16/213245445.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Magician</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">欢迎来到我的小屋</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-hexo解决电脑更换无法写博客的问题" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/05/29/hexo解决电脑更换无法写博客的问题/" class="article-date">
+  	<time datetime="2018-05-29T11:25:47.000Z" itemprop="datePublished">2018-05-29</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      hexo解决电脑更换无法写博客的问题
+      
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/HEXO/">HEXO</a>
+	</div>
+
+
+        
+          
+<div class="counter-tag counter">
+    <span id="/2018/05/29/hexo解决电脑更换无法写博客的问题/" class="leancloud_visitors post-title-link"
+          style="font-size: 12px" data-flag-title="hexo解决电脑更换无法写博客的问题">
+         &nbsp;
+        view
+    </span>
+</div>
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>hexo部署blog到github确实很方便，下载相关插件，然后一条命令就搞定了。不明白？参考这篇<a href="https://threereyed.github.io/2018/05/22/Hexo/" target="_blank" rel="noopener">hexo配置</a>，神马？不知道怎么配置nodejs环境？那就参考<a href="http://jingyan.baidu.com/article/9113f81b01c4e72b3214c7d3.html" target="_blank" rel="noopener">这里</a>。 </p>
+<p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1527769690886&amp;di=29a6a4f1a965778ed8760ede19954cdf&amp;imgtype=jpg&amp;src=http%3A%2F%2Fimg1.imgtn.bdimg.com%2Fit%2Fu%3D1570662146%2C719786847%26fm%3D214%26gp%3D0.jpg" alt="default"></p>
+<a id="more"></a>
+<p>如果只满足于简单的部署发布，现在就完全够用了。可是有人就喜欢在不同时间、不同地点、不同电脑上写文章( •̀ ω •́ )y！(嗯，那个人就是我～)。这样的问题如何解决呢，总体思路是使用github的分支思想，将所有文件放在hexo分支下，将public文件夹通过插件自动发布放在master分支以供加载展示。同时因为有配置.gitignore文件，无需担心node_modules等文件被手动发布到hexo分支下，达到文件分类存放的目的。follow下面几步让你赏心悦目、随心所欲写文章。 </p>
+<p>步骤</p>
+<hr>
+<p>1、创建两个分支master与hexo;</p>
+<p>2、设置hexo为默认分支（因为我们只需要手动管理这个分支上的Hexo网站文件） </p>
+<p>3、使用git clone SSH地址</p>
+<p>4、修改_config.yml中的deploy参数，分支应为master</p>
+<p>5、依次执行</p>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add .  # 注意最后的 .  这个.便是当前目录所有文件</span><br><span class="line">$ git commit -m &quot;...&quot; # 提交文件的注释</span><br><span class="line">$ git push origin hexo    # 提交网站相关文件</span><br><span class="line">$ hexo d -g   # 执行生成，并部署到GitHub上</span><br></pre></td></tr></table></figure>
+<p>其他可能用到的命令</p>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git branch hexo  # 创建hexo分支</span><br><span class="line">$ git chechout hexo   # 切换到hexo 分支</span><br><span class="line">$ rm -rf *   # 删除所有文件，隐藏文件不会删除</span><br><span class="line">$ git status  # 显示本地目录和缓存区的状态</span><br></pre></td></tr></table></figure>
+<p>发布新文章</p>
+<hr>
+<p>新建markdown文件， 编辑文章</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;New Blog&quot;    # New blog 博客文件名</span><br></pre></td></tr></table></figure>
+<p>在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理。 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;...&quot;</span><br><span class="line">$ git push origin hexo #指令将改动推送到GitHub(此时当前分支应为hexo)</span><br></pre></td></tr></table></figure>
+<p>最后执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
+<p>发布网站到master分支上。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/06/05/Django MTV模式详解/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          Django学习记录
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/05/27/Hexo小知识/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo小知识</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="hexo解决电脑更换无法写博客的问题" data-title="hexo解决电脑更换无法写博客的问题" data-url="http://yoursite.com/2018/05/29/hexo解决电脑更换无法写博客的问题/"  data-images="http://www.qqzhi.com/uploadpic/2014-09-16/213245445.jpg" data-content="hexo解决电脑更换无法写博客的问题">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2018 Magician
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="/js/main.js"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+</body>
+</html>

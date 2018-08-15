@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Django学习记录 | Magicianly</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="www.kernel.org如果版本号中间是奇数。代表测试版如果版本号中间是偶数。代表正式版ps查看进程状态who/w查看用户状态whoami查看登录用户uname查看系统hostname查看主机名adduser 用户名创建用户passwd 用户名更改指定用户名的密码，如果没有跟用户名更改当前用户密码logout/exit退出登录shutdown关机reboot重启shutdown -r帮助man">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Django学习记录">
+<meta property="og:url" content="http://yoursite.com/2018/06/07/Linux 常用命令/index.html">
+<meta property="og:site_name" content="Magicianly">
+<meta property="og:description" content="www.kernel.org如果版本号中间是奇数。代表测试版如果版本号中间是偶数。代表正式版ps查看进程状态who/w查看用户状态whoami查看登录用户uname查看系统hostname查看主机名adduser 用户名创建用户passwd 用户名更改指定用户名的密码，如果没有跟用户名更改当前用户密码logout/exit退出登录shutdown关机reboot重启shutdown -r帮助man">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-08-15T11:18:12.882Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Django学习记录">
+<meta name="twitter:description" content="www.kernel.org如果版本号中间是奇数。代表测试版如果版本号中间是偶数。代表正式版ps查看进程状态who/w查看用户状态whoami查看登录用户uname查看系统hostname查看主机名adduser 用户名创建用户passwd 用户名更改指定用户名的密码，如果没有跟用户名更改当前用户密码logout/exit退出登录shutdown关机reboot重启shutdown -r帮助man">
+  
+    <link rel="alternative" href="/atom.xml" title="Magicianly" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="https://i.imgur.com/sJIaT5C.jpg">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+
+  <script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+  
+      <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<script>AV.initialize("OwMXlylMoU9wWk7rapIN5ghI-gzGzoHsz", "icxRJWTVsjH8y7aIqrp0iCIV");</script>
+<script src="/js/Counter.js"></script>
+  
+</head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://www.qqzhi.com/uploadpic/2014-09-16/213245445.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Magician</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">欢迎来到我的小屋</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/HEXO-小知识总结/" style="font-size: 20px;">HEXO 小知识总结</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/程序人生/" style="font-size: 10px;">程序人生</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://magicianly.github.io/">magicianly</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://violet-maple.github.io">波哥</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://blog.csdn.net/weixin_41782332">个人博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://zhouforrest.github.io/">超哥</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://jamey92.github.io/">jamey</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://karen2066.github.io/">Karen2066</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Magician</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://www.qqzhi.com/uploadpic/2014-09-16/213245445.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Magician</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">欢迎来到我的小屋</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-Linux 常用命令" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/06/07/Linux 常用命令/" class="article-date">
+  	<time datetime="2018-06-07T12:05:47.000Z" itemprop="datePublished">2018-06-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Django学习记录
+      
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        
+          
+<div class="counter-tag counter">
+    <span id="/2018/06/07/Linux 常用命令/" class="leancloud_visitors post-title-link"
+          style="font-size: 12px" data-flag-title="Django学习记录">
+         &nbsp;
+        view
+    </span>
+</div>
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://www.kernel.org" target="_blank" rel="noopener">www.kernel.org</a><br>如果版本号中间是奇数。代表测试版<br>如果版本号中间是偶数。代表正式版<br><code>ps</code><br>查看进程状态<br><code>who/w</code><br>查看用户状态<br><code>whoami</code><br>查看登录用户<br><code>uname</code><br>查看系统<br><code>hostname</code><br>查看主机名<br><code>adduser 用户名</code><br>创建用户<br><code>passwd 用户名</code><br>更改指定用户名的密码，如果没有跟用户名更改当前用户密码<br><code>logout/exit</code><br>退出登录<br><code>shutdown</code><br>关机<br><code>reboot</code><br>重启<br><code>shutdown -r</code><br>帮助<br><code>man 命令名</code><br><code>命令名 --help</code><br>切换用户<br><code>su</code><br>last - 查看登录系统的历史记录<br>文件和文件夹操作<br><code>mkdir</code><br>创建文件夹<br><code>rmdir</code><br>删除文件夹<br><code>touch 文件名和后缀</code><br>创建文件，文件存在是<br><code>ls -l</code><br>查看文件 长格式<br><code>ls -a</code><br>查看隐藏文件 文件以点开头是隐藏文件<br>cat 文件名<br>head 查看文件名<br>tail 查看文件名<br>查看文件 cat cpuinfo查看CPU<br>cat meminfo<br>查看内存<br>etc 配置目录<br>usr<br>rm - remove<br>rm -rf 递归删除<br>rm -r -recursive<br>rm -i - interactive<br>rm -f - force<br>history 历史命令记录<br>用!命令编号可以执行编号行的命令<br>cp - copy<br>scp 安全拷贝<br>mv - move<br>ln 创建硬链接 ln 文件名 路径/更改后的文件名<br>grep 查找字符串<br>ctrl + c终止当前执行命令<br>jobs 查看后台任务<br>任务放在后台运行，需要在命令后面放&amp;<br>wc 查询文件的-l行数，多少-w个字<br>4e00-9fa5中文字</p>
+<p>cat /etc/centos-release<br>查看系统版本号<br>ln -s /etc/centos-release sysver<br>创建软链接</p>
+<p>压缩解压缩<br>后缀名是gz<br>gunzip 解压缩<br>.zip<br>unzip<br>xz<br>xz -z 压缩<br>xz -d 解压缩</p>
+<ul>
+<li>0 ~ -9  默认是6 压缩比<br>归档解归档<br>tar<br>-c 归档<br>-x 解归档<br>-v 过程显示<br>-f 文件名<br>-t 查看后面需要跟文件名 -tf</li>
+</ul>
+<p>alias 别名，可以给命令重新起名<br>alias shit=’tar -xvf’<br>unalias shit 取消别名<br>文件和路径<br>命名规则：不要用特殊字符<br>隐藏文件、文件夹：前面加点的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">/- 根</span><br><span class="line">/bin中 - 用户二进制文件</span><br><span class="line">/usr/bin目录 - 系统二进制文件</span><br><span class="line">/etc - 配置文件</span><br><span class="line">hosts：设备名称（或域名）到ip地址的解析，相当于本地存在的dns功能</span><br><span class="line">/dev - 设备文件</span><br><span class="line">/proc - 进程信息</span><br><span class="line">/var - 变量文件</span><br><span class="line">/tmp - 临时文件</span><br><span class="line">/usr - 用户程序</span><br><span class="line">/home - HOME目录</span><br><span class="line">/boot - 引导加载程序文件</span><br><span class="line">/lib - 系统库</span><br><span class="line">/opt - 可选的附加应用程序</span><br><span class="line">/mnt - 挂载目录</span><br><span class="line">/media - 可移动媒体设备</span><br><span class="line">/srv - 服务数据</span><br></pre></td></tr></table></figure></p>
+<p>更改文件权限<br><code>chmod u        ,o         ,g</code><br>4 – 只读<br>5 – 读执行<br>6 – 读 写<br>7 –读 写 执行<br>chmod 777 文件名  -  所有人对此文件有读写执行的权限<br>rw-            x 执行<br>所有者的权限 -read write - 读写<br>r–<br>同组用户对这个文件的权限<br>r–<br>其他用户对这个文件的权限</p>
+<p>2to3 需要转换的文件名 -w 是创建备份</p>
+<p>NginX - Web服务器<br>MySQL - 关系型数据库 - 持久化<br>Redis - 非关系型数据库<br>防火墙 - iptables / firewell<br>列表[]第二大的元素找出来<br>列表[]重复次数前三排列出来</p>
+<p>vim<br>命令模式下<br>查找<br>/内容<br>替换<br>1,$s/查找内容/更换内容/g<br>1,$ 范围<br>s/ 替换<br>/g 全局搜索折行</p>
+<p>rpm - redhat package manager<br>yum - yellowdog updater modified<br>包管理工具</p>
+<p>DNS - 域名翻译成IP地址<br>HTTP服务器 -<br>Apache<br>LAMP = Linux + Apache + MySQL + PHP<br>      Linux + NginX + MySQL + Python<br>yum list installed | grep<br>yum search<br>NginX<br>/usr/share/nginx/html     主页地址<br> /etc/nginx/nginx.conf     配置文件</p>
+<p>ps -ef | grep<br>ps -aux </p>
+<p>rpm  - redhat package manager<br>红帽子包管理工具<br>-i 安装<br>-e 删除<br>vh 安装过程<br>-qa 查询所有安装过的包<br>xargs 查询内容当参数传给下一个命令<br>rpm -qa | grep jdk | xargs rpm -e<br>守护线程、进程<br>daemon 后台程序<br>firewall 开端口<br>开服务<br>systemctl start 服务名<br>  stop<br>  restart<br>service 服务名 status<br>firewall-cmd –add-port=80/tcp –permanent –zone=public<br>开机自启<br>systemctl enable 服务名<br>关闭开机自启<br>systemctl disable 服务名<br>centOS7以前的版本，配置服务需要用chkconfig –list</p>
+<p>crontab<br>一共五个属性<br>第一个分钟<br>第二个小时<br>第三个月份<br>第四个日期<br>第五个星期<br>逗号可以添加<br>/ 每一次</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/06/07/Django 之 models的 F 和 Q() 函数 - 副本/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          Django学习记录
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/06/07/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="Linux 常用命令" data-title="Django学习记录" data-url="http://yoursite.com/2018/06/07/Linux 常用命令/"  data-images="http://www.qqzhi.com/uploadpic/2014-09-16/213245445.jpg" data-content="Django学习记录">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2018 Magician
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="/js/main.js"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+</body>
+</html>
